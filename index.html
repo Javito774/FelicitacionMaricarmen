@@ -23,36 +23,16 @@
 
     const jsConfetti = new JSConfetti()
 
-    /*jsConfetti.addConfetti({
-      confettiColors: [
-        '#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7',
-      ],
-    })
-    jsConfetti.addConfetti({
-      confettiColors: [
-        '#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7',
-      ],
-    })
-    jsConfetti.addConfetti({
-      confettiColors: [
-        '#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7',
-      ],
-    })
-    jsConfetti.addConfetti({
-      confettiColors: [
-        '#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7',
-      ],
-    })
-    jsConfetti.addConfetti({
-      confettiColors: [
-        '#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7',
-      ],
-    })*/
     document.querySelector('button').addEventListener('click', ()=> {
-        const interval = setInterval(()=>{
-          jsConfetti.addConfetti({
-          emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
-          })}, 500)
+      const interval = setInterval(()=>{
+        jsConfetti.addConfetti({
+        emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
+      })}, 500)
+
+      document.getElementById("carta2").classList.remove("visible")
+      document.getElementById("carta1").classList.add("visible")
+
+        
     })
   </script>
 </body>

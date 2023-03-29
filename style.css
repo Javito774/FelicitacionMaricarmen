@@ -26,7 +26,7 @@ body {
   box-shadow: inset 0 -1px 0 var(--color-border-muted);
   position: relative;
   z-index: 9000;
-  max-width: 438px;
+  max-width: 340px;
 }
 
 .carta.visible {
@@ -49,4 +49,8 @@ img {
   width: 100%;
   border-radius: 6px;
   margin-bottom: 24px;
+}
+
+div#carta1 {
+  padding: 12px 24px 24px;
 }
